@@ -63,7 +63,7 @@ persist.timed.enable=true
 # perf
 ro.core_ctl_min_cpu=2
 ro.core_ctl_max_cpu=4
-ro.min_freq_0=800000
+ro.min_freq_0=400000
 ro.vendor.extension_library=libqti-perfd-client.so
 
 #Trim properties
@@ -73,3 +73,7 @@ ro.sys.fw.trim_empty_percent=100
 ro.sys.fw.trim_cache_percent=100
 ro.sys.fw.trim_enable_memory=1073741824
 
+#Enable B service adj transition by default
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000

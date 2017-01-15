@@ -583,3 +583,6 @@ service wcnss-service /system/bin/wcnss_service
     user system
     group system wifi radio
     oneshot
+
+service libqmi_oem_main /system/bin/libqmi_oem_main
+     class main
